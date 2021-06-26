@@ -48,6 +48,11 @@ export default function Home() {
             </p>
           </a>
         </div>
+        <div>
+          <a className="twitter-timeline" href="https://twitter.com/tossy_yukky?ref_src=twsrc%5Etfw">Tweets by
+            tossy_yukky</a>
+          <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+        </div>
       </main>
 
       <footer className={styles.footer}>
