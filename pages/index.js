@@ -49,7 +49,7 @@ export default function Home() {
           </a>
         </div>
         <div>
-          <a className="twitter-timeline" href="https://twitter.com/tossy_yukky?ref_src=twsrc%5Etfw">Tweets by
+          <a className="twitter-timeline" href="https://twitter.com/tossy_yukky?ref_src=twsrc%5Etfw" data-width="600">Tweets by
             tossy_yukky</a>
           <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
         </div>
