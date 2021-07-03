@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -10,6 +11,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <div>
+          <Link href="/sub">hogehoge</Link>
+        </div>
+        <div>
+          <Link href="/three">Threejs</Link>
+        </div>
         <div>
           <a className="twitter-timeline" href="https://twitter.com/tossy_yukky?ref_src=twsrc%5Etfw" data-width="600">Tweets by
             tossy_yukky</a>
