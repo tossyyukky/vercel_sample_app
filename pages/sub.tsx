@@ -71,24 +71,33 @@ export default function Sub() {
           <img src={user.avatarUrl} alt=""/>
           {user.login}
           {user.contributionsCollection.contributionCalendar.totalContributions}
-          <table>
+          <div style={{display: 'flex'}}>
             {user.contributionsCollection.contributionCalendar.weeks.map(w => {
               return (
-                <tr>
-                  <td>{w.contributionDays.map(d => {
+                <div>
+                  {w.contributionDays.map(d => {
                     return (
-                      <td>
-                        <div style={{backgroundColor: d.color}}>
-                          {d.date}
-                        </div>
-
-                      </td>
+                      <div style={{backgroundColor: d.color, width: '5px', height: '5px'}}>
+                        {}
+                      </div>
                     )
-                  })}</td>
-                </tr>
+                  })}
+                </div>
+                // <tr>
+                //   <td>{w.contributionDays.map(d => {
+                //     return (
+                //       <td>
+                //         <div style={{backgroundColor: d.color}}>
+                //           {d.date}
+                //         </div>
+                //
+                //       </td>
+                //     )
+                //   })}</td>
+                // </tr>
               )
           })}
-          </table>
+          </div>
         </div>
       </main>
 

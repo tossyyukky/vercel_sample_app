@@ -2,7 +2,7 @@ import { graphql } from '@octokit/graphql'
 
 export const githubApi = () => {
   const endpoint = 'https://api.github.com/graphql'
-  const token = process.env.GIT_KEY ?? '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'
+  const token = process.env.GIT_KEY ?? ''
 
   return graphql.defaults({
     headers: {
